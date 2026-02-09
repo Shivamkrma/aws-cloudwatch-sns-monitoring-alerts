@@ -1,10 +1,10 @@
-This project implements a cloud-based monitoring and alerting system using AWS CloudWatch and Amazon SNS.
-It continuously monitors EC2 instance performance metrics and sends real-time email alerts when predefined thresholds are breached.Overview
+Overview
 
-This project implements a cloud monitoring and alerting solution using AWS CloudWatch and Amazon SNS. It monitors EC2 instance performance and automatically sends email alerts when defined thresholds are exceeded.
+This project demonstrates a real-time cloud monitoring and alerting system built using AWS CloudWatch and Amazon SNS. It continuously monitors EC2 instance performance and automatically sends email alerts when predefined thresholds are crossed.
 
 Architecture
-EC2 Instance → CloudWatch Metrics → CloudWatch Alarm → SNS → Email Alert
+
+EC2 Instance → CloudWatch Metrics → CloudWatch Alarm → SNS → Email Notification
 
 Services Used
 
@@ -18,7 +18,7 @@ AWS IAM
 
 CloudWatch Agent
 
-What It Monitors
+Monitoring Scope
 
 CPU Utilization
 
@@ -26,29 +26,22 @@ Memory Usage
 
 Disk Usage
 
-Instance Health
+EC2 Instance Health
 
-Alerting
+Alerting Mechanism
 
-CloudWatch alarms trigger on threshold breaches
+CloudWatch alarms evaluate metrics in real time
 
-Amazon SNS sends real-time email notifications
+Amazon SNS delivers instant email notifications on threshold breaches
 
-Security
+Security Implementation
 
-IAM role attached to EC2 (no access keys used)
+IAM role-based access (no hardcoded AWS credentials)
 
 Least-privilege IAM policies
 
-Secure SNS topic for alerts
+Secure SNS topic configuration
 
 Outcome
 
-Provides real-time visibility into EC2 health with automated alerts, following AWS security best practices.
-
-Resume Line
-
-Built a Cloud Monitoring and Alert System using AWS CloudWatch and SNS to monitor EC2 metrics and send real-time email alerts.
-
-Author
-
+Delivers continuous visibility into EC2 health with automated alerts, following AWS security and operational best practices.
