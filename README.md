@@ -1,60 +1,54 @@
-# aws-cloudwatch-sns-monitoring-alerts
-Cloud Monitoring and Alert System using AWS Cloudwatch and SNS
-TITLE
-Secure Data Storage using AWS S3 and RDS
+This project implements a cloud-based monitoring and alerting system using AWS CloudWatch and Amazon SNS.
+It continuously monitors EC2 instance performance metrics and sends real-time email alerts when predefined thresholds are breached.Overview
 
-------------------------------------
+This project implements a cloud monitoring and alerting solution using AWS CloudWatch and Amazon SNS. It monitors EC2 instance performance and automatically sends email alerts when defined thresholds are exceeded.
 
-INTRODUCTION
-This project is based on secure cloud data storage using Amazon Web Services.
-Amazon S3 is used for object storage and Amazon RDS (MySQL) is used for
-structured data storage.
+Architecture
+EC2 Instance → CloudWatch Metrics → CloudWatch Alarm → SNS → Email Alert
 
-------------------------------------
+Services Used
 
-OBJECTIVE
-- To store data securely using AWS S3
-- To manage structured data using Amazon RDS
-- To implement IAM for secure access
-- To ensure data availability and security
+AWS EC2
 
-------------------------------------
+AWS CloudWatch
 
-AWS SERVICES USED
-- Amazon EC2
-- Amazon S3
-- Amazon RDS (MySQL)
-- IAM
+Amazon SNS
 
-------------------------------------
+AWS IAM
 
-ARCHITECTURE
-In this project, EC2 instance is used to interact with Amazon S3 and
-Amazon RDS securely using IAM roles.
+CloudWatch Agent
 
-------------------------------------
+What It Monitors
 
-IMPLEMENTATION STEPS
-1. Created an EC2 instance
-2. Created an S3 bucket
-3. Created an RDS MySQL database
-4. Attached IAM role to EC2
-5. Configured security groups
+CPU Utilization
 
-------------------------------------
+Memory Usage
 
-RESULT
-The project successfully demonstrates secure data storage using AWS
-S3 and RDS with proper access control.
+Disk Usage
 
-------------------------------------
+Instance Health
 
-CONCLUSION
-This project provides a simple and secure way to store and manage
-data in the cloud using AWS services.
+Alerting
 
-------------------------------------
+CloudWatch alarms trigger on threshold breaches
 
-AUTHOR
-Name: Shivam Kumar
-Course: MCA
+Amazon SNS sends real-time email notifications
+
+Security
+
+IAM role attached to EC2 (no access keys used)
+
+Least-privilege IAM policies
+
+Secure SNS topic for alerts
+
+Outcome
+
+Provides real-time visibility into EC2 health with automated alerts, following AWS security best practices.
+
+Resume Line
+
+Built a Cloud Monitoring and Alert System using AWS CloudWatch and SNS to monitor EC2 metrics and send real-time email alerts.
+
+Author
+
